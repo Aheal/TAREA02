@@ -25,7 +25,7 @@ public class Account {
         return this.zone;
     }
 
-    void debit(int balance) {
+    public void debit(int balance) {
         this.balance -= balance;
         if(this.balance < 100){
             this.alerts.sendAlert(this.name+", your account balance is below 100");
